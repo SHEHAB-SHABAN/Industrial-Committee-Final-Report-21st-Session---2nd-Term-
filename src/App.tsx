@@ -678,7 +678,7 @@ export default function App() {
               <span className="text-[#C5A059] font-bold text-sm uppercase tracking-widest">منهجية التميز الصناعي</span>
             </motion.div>
             <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl font-bold text-[#002B49] mb-6">
-              إدارة المشاريع الاحترافية
+              إدارة المشاريع الصناعية الاحترافية
             </motion.h2>
             <motion.p variants={itemVariants} className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               اعتمدت اللجنة منهجية <span className="text-[#C5A059] font-bold">"التكمال الاستراتيجي"</span> إيماناً بأن الصناعة ليست مجرد خطوط إنتاج، بل هي منظومة متكاملة تبدأ من الرؤية وتنتهي بالقيمة المضافة.
