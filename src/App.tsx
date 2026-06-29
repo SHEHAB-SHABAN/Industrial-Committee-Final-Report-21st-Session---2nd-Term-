@@ -73,21 +73,21 @@ const REPORTS = [
   }
 ];
 
-// مصفوفة جميع أعضاء اللجنة
+// مصفوفة جميع أعضاء اللجنة مع ضبط نسب التكبير والموضع لتوحيد مقاسات الوجوه في الإطار
 const ALL_MEMBERS = [
-  { name: 'الأستاذ/ نائف بن مشعل الزايدي', role: 'رئيس اللجنة', image: 'https://drive.google.com/file/d/1gewg9D1POL8bY-WQ7GfksGYAsFUP0jr-/view?usp=sharing' },
-  { name: 'المهندس/ حامد بن فؤاد سرحان', role: 'نائب الرئيس', image: 'https://drive.google.com/file/d/1HzEWS8Eo2DJ8FGeJ_B2SlrKS7i3kp78j/view?usp=sharing' },
-  { name: 'الدكتور/ أحمد بن فايز القثامي', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1-NSDXaGOK-2j_QeSkxRxszwhHDRQFHYu/view?usp=sharing' },
-  { name: 'المهندس/ أمين بن عرفان عتيق', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1K_gPXOXXvhS7rMPTQOSKmWarXCk51Wtv/view?usp=sharing' },
-  { name: 'الأستاذة/ أنوار بنت عامر القرشي', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/18yL4FvXj6oXv9IZ2ipEmKAnshemJ3Oqx/view?usp=sharing' },
-  { name: 'المهندس/ ايهاب بن عدنان مساوي', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1EiCwPeytwB5eTmoL1ekeU8CJiJsMSXaU/view?usp=sharing' },
-  { name: 'المهندس/ بدر بن عبدالمحسن الحربي', role: 'عضو مشارك', image: 'https://drive.google.com/file/d/1NXxGU_NZuooIoE2VYloKm1mn9cf09smu/view?usp=sharing' },
-  { name: 'الأستاذ/ عبدالعزيز بن حمد المهباش', role: 'عضو مشارك', image: 'https://drive.google.com/file/d/1DOW9opIBzQCCMfHAPbl6Ju4IInnuvKs0/view?usp=sharing' },
-  { name: 'المهندس/ علي بن محمد المصموم', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1C9HmJiz9ek70AfEQc96zqIHOOSwMRzYu/view?usp=sharing' },
-  { name: 'الأستاذ/ ماجد بن عادل الربوعي', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1atOvfyi61-6GmlpqUq4fNbz_Jg6JRT19/view?usp=sharing' },
-  { name: 'المهندس/ ماجد بن فايز الشهري', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1fM4-5SJocBgKdSjErFO9Yna60qspxgfP/view?usp=sharing' },
-  { name: 'المهندس/ محمد بن يوسف هارون', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1tVhjRP268pskZGvZvTuLme7Bp2q_c-h-/view?usp=sharing' },
-  { name: 'الأستاذة/ نوف بنت نواف القرشي', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1gLdOvbfytaEgfnXyg7aS0laqKOb4pMAd/view?usp=sharing' }
+  { name: 'الأستاذ/ نائف بن مشعل الزايدي', role: 'رئيس اللجنة', image: 'https://drive.google.com/file/d/1gewg9D1POL8bY-WQ7GfksGYAsFUP0jr-/view?usp=sharing', scale: 1, position: 'center 8%' },
+  { name: 'المهندس/ حامد بن فؤاد سرحان', role: 'نائب الرئيس', image: 'https://drive.google.com/file/d/1HzEWS8Eo2DJ8FGeJ_B2SlrKS7i3kp78j/view?usp=sharing', scale: 1.05, position: 'center 8%' },
+  { name: 'الدكتور/ أحمد بن فايز القثامي', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1-NSDXaGOK-2j_QeSkxRxszwhHDRQFHYu/view?usp=sharing', scale: 1.18, position: 'center 10%' },
+  { name: 'المهندس/ أمين بن عرفان عتيق', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1K_gPXOXXvhS7rMPTQOSKmWarXCk51Wtv/view?usp=sharing', scale: 1.25, position: 'center 10%' },
+  { name: 'الأستاذة/ أنوار بنت عامر القرشي', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/18yL4FvXj6oXv9IZ2ipEmKAnshemJ3Oqx/view?usp=sharing', scale: 1.25, position: 'center 8%' },
+  { name: 'المهندس/ ايهاب بن عدنان مساوي', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1EiCwPeytwB5eTmoL1ekeU8CJiJsMSXaU/view?usp=sharing', scale: 1, position: 'center 15%' },
+  { name: 'المهندس/ بدر بن عبدالمحسن الحربي', role: 'عضو مشارك', image: 'https://drive.google.com/file/d/1NXxGU_NZuooIoE2VYloKm1mn9cf09smu/view?usp=sharing', scale: 1.12, position: 'center 10%' },
+  { name: 'الأستاذ/ عبدالعزيز بن حمد المهباش', role: 'عضو مشارك', image: 'https://drive.google.com/file/d/1DOW9opIBzQCCMfHAPbl6Ju4IInnuvKs0/view?usp=sharing', scale: 1.22, position: 'center 10%' },
+  { name: 'المهندس/ علي بن محمد المصموم', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1C9HmJiz9ek70AfEQc96zqIHOOSwMRzYu/view?usp=sharing', scale: 1.22, position: 'center 10%' },
+  { name: 'الأستاذ/ ماجد بن عادل الربوعي', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1atOvfyi61-6GmlpqUq4fNbz_Jg6JRT19/view?usp=sharing', scale: 1.2, position: 'center 10%' },
+  { name: 'المهندس/ ماجد بن فايز الشهري', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1fM4-5SJocBgKdSjErFO9Yna60qspxgfP/view?usp=sharing', scale: 1.2, position: 'center 10%' },
+  { name: 'المهندس/ محمد بن يوسف هارون', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1tVhjRP268pskZGvZvTuLme7Bp2q_c-h-/view?usp=sharing', scale: 1.18, position: 'center 10%' },
+  { name: 'الأستاذة/ نوف بنت نواف القرشي', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1gLdOvbfytaEgfnXyg7aS0laqKOb4pMAd/view?usp=sharing', scale: 1.28, position: 'center 8%' }
 ];
 
 const containerVariants = {
@@ -111,8 +111,8 @@ const getDirectImageUrl = (url: string) => {
   return (match && match[1]) ? `https://lh3.googleusercontent.com/d/${match[1]}` : url;
 };
 
-// Component لبطاقة العضو بالهوية الجديدة موحدة الحجم
-const MemberCard = ({ member }: { member: { name: string, role: string, image: string } }) => {
+// Component لبطاقة العضو بالهوية الجديدة موحدة الحجم ومضبوطة الأبعاد
+const MemberCard = ({ member }: { member: { name: string, role: string, image: string, scale?: number, position?: string } }) => {
   const cleanName = member.name.replace(/^(الأستاذ|المهندس|الدكتور|الأستاذة)ة?\/\s*/, '');
   const titleMatch = member.name.match(/^(.*?\/\s*)/);
   const title = titleMatch ? titleMatch[1].replace('/', '') : '';
@@ -124,12 +124,20 @@ const MemberCard = ({ member }: { member: { name: string, role: string, image: s
   return (
     <motion.div variants={itemVariants} className="flex flex-col justify-between bg-white border border-gray-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group cursor-default h-full w-full">
       <div className="w-full relative overflow-hidden bg-gray-50 border-b-[5px] border-[#C5A059] flex-shrink-0" style={{ aspectRatio: '4 / 5' }}>
-        <img 
-          src={imageSrc} 
-          alt={cleanName} 
-          className="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-          referrerPolicy="no-referrer" 
-        />
+        <div 
+          className="absolute inset-0 w-full h-full overflow-hidden origin-top"
+          style={{
+            transform: member.scale ? `scale(${member.scale})` : undefined
+          }}
+        >
+          <img 
+            src={imageSrc} 
+            alt={cleanName} 
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            style={{ objectPosition: member.position || 'center top' }}
+            referrerPolicy="no-referrer" 
+          />
+        </div>
       </div>
       <div className="text-center p-4 md:p-5 flex flex-col flex-grow justify-center items-center w-full bg-white min-h-[90px]">
         {title && <div className="text-[10px] md:text-xs text-[#C5A059] font-bold mb-1">{title}</div>}
@@ -395,10 +403,19 @@ export default function App() {
       </AnimatePresence>
 
       {/* Hero Section */}
-      <section id="hero" className="relative h-screen flex items-center justify-center overflow-hidden bg-[#002B49]">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-0 left-0 w-full h-full bg-[url('https://picsum.photos/seed/construction/1920/1080')] bg-cover bg-center mix-blend-overlay" />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#002B49]/80 to-[#002B49]" />
+      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#002B49] py-20">
+        <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+          >
+            <source src="https://makkahcci.org.sa/mc_theme_v5/static/src/docs/header.mp4" type="video/mp4" />
+          </video>
+          <div className="absolute inset-0 bg-[#002B49]/65" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#002B49] via-transparent to-[#002B49]/90" />
         </div>
         
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
