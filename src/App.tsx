@@ -79,7 +79,7 @@ const ALL_MEMBERS = [
   { name: 'المهندس/ حامد بن فؤاد سرحان', role: 'نائب الرئيس', image: 'https://drive.google.com/file/d/1HzEWS8Eo2DJ8FGeJ_B2SlrKS7i3kp78j/view?usp=sharing' },
   { name: 'الدكتور/ أحمد بن فايز القثامي', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1-NSDXaGOK-2j_QeSkxRxszwhHDRQFHYu/view?usp=sharing' },
   { name: 'المهندس/ أمين بن عرفان عتيق', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1K_gPXOXXvhS7rMPTQOSKmWarXCk51Wtv/view?usp=sharing' },
-  { name: 'الأستاذة/ أنوار بنت عامر القرشي', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1aiOc3HTNUcsvOjwHA5ewLL3C1nl2tS-8/view?usp=sharing' },
+  { name: 'الأستاذة/ أنوار بنت عامر القرشي', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/18yL4FvXj6oXv9IZ2ipEmKAnshemJ3Oqx/view?usp=sharing' },
   { name: 'المهندس/ ايهاب بن عدنان مساوي', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1EiCwPeytwB5eTmoL1ekeU8CJiJsMSXaU/view?usp=sharing' },
   { name: 'المهندس/ بدر بن عبدالمحسن الحربي', role: 'عضو مشارك', image: 'https://drive.google.com/file/d/1NXxGU_NZuooIoE2VYloKm1mn9cf09smu/view?usp=sharing' },
   { name: 'الأستاذ/ عبدالعزيز بن حمد المهباش', role: 'عضو مشارك', image: 'https://drive.google.com/file/d/1DOW9opIBzQCCMfHAPbl6Ju4IInnuvKs0/view?usp=sharing' },
@@ -87,7 +87,7 @@ const ALL_MEMBERS = [
   { name: 'الأستاذ/ ماجد بن عادل الربوعي', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1atOvfyi61-6GmlpqUq4fNbz_Jg6JRT19/view?usp=sharing' },
   { name: 'المهندس/ ماجد بن فايز الشهري', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1fM4-5SJocBgKdSjErFO9Yna60qspxgfP/view?usp=sharing' },
   { name: 'المهندس/ محمد بن يوسف هارون', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1tVhjRP268pskZGvZvTuLme7Bp2q_c-h-/view?usp=sharing' },
-  { name: 'الأستاذة/ نوف بنت نواف القرشي', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1aiOc3HTNUcsvOjwHA5ewLL3C1nl2tS-8/view?usp=sharing' }
+  { name: 'الأستاذة/ نوف بنت نواف القرشي', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1gLdOvbfytaEgfnXyg7aS0laqKOb4pMAd/view?usp=sharing' }
 ];
 
 const containerVariants = {
@@ -467,7 +467,7 @@ export default function App() {
                 <div className="w-12 h-1 bg-[#C5A059]" />
                 <span className="text-[#C5A059] font-bold uppercase tracking-wider">تشكيل اللجنة واستراتيجيات عملها</span>
               </motion.div>
-              <motion.h2 variants={itemVariants} className="text-4xl font-bold mb-8 leading-tight text-[#002B49]">
+              <motion.h2 variants={itemVariants} className="text-[25px] font-bold mb-8 leading-tight text-[#002B49]">
                 صدر بيان اللجنة التنفيذية بغرفة مكة المكرمة<span className="text-[#C5A059]"> بأسماء أعضاء اللجنة الصناعية</span> للفترة الثانية - للدورة الـ 21
               </motion.h2>
               <motion.p variants={itemVariants} className="text-lg text-gray-600 mb-8 leading-relaxed">
@@ -503,7 +503,7 @@ export default function App() {
             >
               <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl border-8 border-gray-50 relative">
                 <img 
-                  src="https://lh3.googleusercontent.com/d/1YTwZ6BEForzsORKgfDEipO8oRlm07kkj" 
+                  src={getDirectImageUrl('https://drive.google.com/file/d/1FnRgVAkaU7sK4vYngb-JMWIcLVzUKpaP/view?usp=sharing')}
                   alt="اللجنة الصناعية" 
                   className="w-full h-full object-cover hover:scale-150 transition-transform duration-600"
                   referrerPolicy="no-referrer"
