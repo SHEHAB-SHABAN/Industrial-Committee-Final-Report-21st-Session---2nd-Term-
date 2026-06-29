@@ -68,25 +68,25 @@ const REPORTS = [
     title: 'تحدي تصاريح دخول العمالة غير المسلمة للمدن الصناعية الواقعة خارج حد الحرم', 
     link: 'https://drive.google.com/file/d/1RXcWRdu7a_8S_Bz2ySFG7o6pupwVEgnu/view?usp=sharing',
     images: [
-      'https://drive.google.com/file/d/1RXcWRdu7a_8S_Bz2ySFG7o6pupwVEgnu/view?usp=sharing'
+      'https://drive.google.com/file/d/1LoMViSnRNxonccEOqOR4QAO9FPX2oqK-/view?usp=drive_link','https://drive.google.com/file/d/1RXcWRdu7a_8S_Bz2ySFG7o6pupwVEgnu/view?usp=sharing'
     ]
   }
 ];
 
 // مصفوفة جميع أعضاء اللجنة
 const ALL_MEMBERS = [
-  { name: 'الأستاذ/ نائف بن مشعل الزايدي', role: 'رئيس اللجنة', image: 'https://drive.google.com/file/d/1_vIvo3eHF0XE2V2bWnMld4wq4c7uoNIS/view?usp=sharing' },
-  { name: 'المهندس/ حامد بن فؤاد سرحان', role: 'نائب الرئيس', image: 'https://drive.google.com/file/d/1yMDMIKEbWpIeCqrrRX-TY4Ljq8ZDuUBO/view?usp=sharing' },
-  { name: 'الدكتور/ أحمد بن فايز القثامي', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1MShJA20C9Bq1qCY0ewhNKTdLZM2n9GKo/view?usp=sharing' },
-  { name: 'المهندس/ أمين بن عرفان عتيق', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1WrVrnAklRfCY8sMFFFiQ287q3uX1F29v/view?usp=sharing' },
+  { name: 'الأستاذ/ نائف بن مشعل الزايدي', role: 'رئيس اللجنة', image: 'https://drive.google.com/file/d/1gewg9D1POL8bY-WQ7GfksGYAsFUP0jr-/view?usp=sharing' },
+  { name: 'المهندس/ حامد بن فؤاد سرحان', role: 'نائب الرئيس', image: 'https://drive.google.com/file/d/1HzEWS8Eo2DJ8FGeJ_B2SlrKS7i3kp78j/view?usp=sharing' },
+  { name: 'الدكتور/ أحمد بن فايز القثامي', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1-NSDXaGOK-2j_QeSkxRxszwhHDRQFHYu/view?usp=sharing' },
+  { name: 'المهندس/ أمين بن عرفان عتيق', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1K_gPXOXXvhS7rMPTQOSKmWarXCk51Wtv/view?usp=sharing' },
   { name: 'الأستاذة/ أنوار بنت عامر القرشي', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1aiOc3HTNUcsvOjwHA5ewLL3C1nl2tS-8/view?usp=sharing' },
-  { name: 'المهندس/ ايهاب بن عدنان مساوي', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/13teQGdNmlDOeXIp2SARAH80zvDHgnhNE/view?usp=sharing' },
-  { name: 'المهندس/ بدر بن عبدالمحسن الحربي', role: 'عضو مشارك', image: 'https://drive.google.com/file/d/1BLCk1ub-Q0Xpf0059IsPsEr_y_g5Zulo/view?usp=sharing' },
-  { name: 'الأستاذ/ عبدالعزيز بن حمد المهباش', role: 'عضو مشارك', image: 'https://drive.google.com/file/d/1LbA7q8Q9jGTYEYEvhvfw6Wct81Xwo9Qz/view?usp=sharing' },
-  { name: 'المهندس/ علي بن محمد المصموم', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1mwxkPh5raqNKRKs-SeBR_IC9B4ogZXwW/view?usp=sharing' },
-  { name: 'الأستاذ/ ماجد بن عادل الربوعي', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1VcYuRL2uF8pq9Pvy2LTkcVWLNRQUud2-/view?usp=sharing' },
-  { name: 'المهندس/ ماجد بن فايز الشهري', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1tOfLGkMUOTE5754Pl8O_DjaPGnxAmjPZ/view?usp=sharing' },
-  { name: 'المهندس/ محمد بن يوسف هارون', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/13SvfpgfdiK23aDIrrciutQfACQXaOq86/view?usp=sharing' },
+  { name: 'المهندس/ ايهاب بن عدنان مساوي', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1EiCwPeytwB5eTmoL1ekeU8CJiJsMSXaU/view?usp=sharing' },
+  { name: 'المهندس/ بدر بن عبدالمحسن الحربي', role: 'عضو مشارك', image: 'https://drive.google.com/file/d/1NXxGU_NZuooIoE2VYloKm1mn9cf09smu/view?usp=sharing' },
+  { name: 'الأستاذ/ عبدالعزيز بن حمد المهباش', role: 'عضو مشارك', image: 'https://drive.google.com/file/d/1DOW9opIBzQCCMfHAPbl6Ju4IInnuvKs0/view?usp=sharing' },
+  { name: 'المهندس/ علي بن محمد المصموم', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1C9HmJiz9ek70AfEQc96zqIHOOSwMRzYu/view?usp=sharing' },
+  { name: 'الأستاذ/ ماجد بن عادل الربوعي', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1atOvfyi61-6GmlpqUq4fNbz_Jg6JRT19/view?usp=sharing' },
+  { name: 'المهندس/ ماجد بن فايز الشهري', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1fM4-5SJocBgKdSjErFO9Yna60qspxgfP/view?usp=sharing' },
+  { name: 'المهندس/ محمد بن يوسف هارون', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1tVhjRP268pskZGvZvTuLme7Bp2q_c-h-/view?usp=sharing' },
   { name: 'الأستاذة/ نوف بنت نواف القرشي', role: 'عضو اللجنة', image: 'https://drive.google.com/file/d/1aiOc3HTNUcsvOjwHA5ewLL3C1nl2tS-8/view?usp=sharing' }
 ];
 
@@ -111,7 +111,7 @@ const getDirectImageUrl = (url: string) => {
   return (match && match[1]) ? `https://lh3.googleusercontent.com/d/${match[1]}` : url;
 };
 
-// Component لبطاقة العضو بالهوية الجديدة
+// Component لبطاقة العضو بالهوية الجديدة موحدة الحجم
 const MemberCard = ({ member }: { member: { name: string, role: string, image: string } }) => {
   const cleanName = member.name.replace(/^(الأستاذ|المهندس|الدكتور|الأستاذة)ة?\/\s*/, '');
   const titleMatch = member.name.match(/^(.*?\/\s*)/);
@@ -122,19 +122,19 @@ const MemberCard = ({ member }: { member: { name: string, role: string, image: s
   const imageSrc = getDirectImageUrl(member.image) || defaultImage;
 
   return (
-    <motion.div variants={itemVariants} className="flex flex-col items-center bg-white group cursor-default">
-      <div className="w-full aspect-[4/5] relative overflow-hidden bg-gray-50 border-b-[6px] border-[#C5A059] shadow-sm group-hover:shadow-md transition-all duration-300">
+    <motion.div variants={itemVariants} className="flex flex-col justify-between bg-white border border-gray-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group cursor-default h-full w-full">
+      <div className="w-full relative overflow-hidden bg-gray-50 border-b-[5px] border-[#C5A059] flex-shrink-0" style={{ aspectRatio: '4 / 5' }}>
         <img 
           src={imageSrc} 
           alt={cleanName} 
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          className="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
           referrerPolicy="no-referrer" 
         />
       </div>
-      <div className="text-center pt-4 pb-2 w-full px-2">
-        {title && <div className="text-[10px] md:text-xs text-[#002B49]/70 font-bold mb-1">{title}</div>}
+      <div className="text-center p-4 md:p-5 flex flex-col flex-grow justify-center items-center w-full bg-white min-h-[90px]">
+        {title && <div className="text-[10px] md:text-xs text-[#C5A059] font-bold mb-1">{title}</div>}
         <h4 className="font-bold text-[#002B49] text-sm md:text-base leading-tight mb-1">{cleanName}</h4>
-        <div className="text-[10px] md:text-xs font-bold text-gray-500">{member.role}</div>
+        <div className="text-[10px] md:text-xs font-bold text-gray-500 mt-0.5">{member.role}</div>
       </div>
     </motion.div>
   );
@@ -411,21 +411,21 @@ export default function App() {
               variants={itemVariants}
               className="inline-block px-4 py-1 bg-[#C5A059] text-white text-sm font-bold rounded-full mb-6 tracking-widest uppercase"
             >
-              التقرير الختامي
+              التقرير الختامي لأعمال ومنجزات اللجنة الصناعية للدورة الـ 21 الفترة الـ 2
             </motion.span>
             <motion.h1 
               variants={itemVariants}
-              className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight"
+              className="text-[50px] leading-[90px] font-black text-white mb-6"
             >
-              اللجنة الصناعية <br />
-              <span className="text-[#C5A059]">الدورة الحادية والعشرون</span> <br />
-              <span className="text-2xl md:text-3xl block mt-2 text-white/90">الفترة الثانية</span>
+              ترحب غرفة مكة المكرمة بأصحاب السعادة <br />
+              <span className="text-[#C5A059]">رئيس ونائب وأعضاء اللجنة الصناعية</span> <br />
+              <span className="text-2xl md:text-3xl block mt-2 text-white/90">في اجتماعهم الدوري الرابع (4)</span>
             </motion.h1>
             <motion.p 
               variants={itemVariants}
               className="text-xl md:text-2xl text-white/80 mb-10 max-w-4xl mx-auto font-light leading-relaxed"
             >
-              لجنة قطاعية منبثقة عن مجلس إدارة غرفة مكة المكرمة
+              الاثنين  29 يونيو 2026م
             </motion.p>
             <motion.div 
               variants={itemVariants}
@@ -545,7 +545,7 @@ export default function App() {
             viewport={{ once: true }}
             className="bg-white p-6 md:p-10 lg:p-12 rounded-[2rem] shadow-xl border border-gray-100 max-w-6xl mx-auto"
           >
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 md:gap-8 justify-center">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 md:gap-8 items-stretch">
               {ALL_MEMBERS.map((member, i) => (
                 <MemberCard key={i} member={member} />
               ))}
@@ -759,8 +759,8 @@ export default function App() {
                 <div className="absolute -inset-4 bg-[#C5A059]/10 rounded-[3rem] blur-2xl" />
                 <div className="relative aspect-[9/16] max-w-[320px] mx-auto rounded-[3rem] overflow-hidden shadow-2xl border-[12px] border-white bg-gray-50 group">
                   <img
-                    src={getDirectImageUrl('https://drive.google.com/file/d/1LoMViSnRNxonccEOqOR4QAO9FPX2oqK-/view?usp=sharing')}
-                    alt="صورة الاستراتيجية"
+                    src={getDirectImageUrl('https://drive.google.com/file/d/1b7wF-yXlGRORE-iYZbcnHdlF8lBUY5N2/view?usp=sharing')}
+                    alt="صورة المبادرة"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     referrerPolicy="no-referrer"
                   />
