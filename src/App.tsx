@@ -432,7 +432,7 @@ export default function App() {
             </motion.span>
             <motion.h1 
               variants={itemVariants}
-              className="text-4xl md:text-5xl leading-tight md:leading-[1.4] font-black text-white mb-6"
+              className="text-[40px] leading-tight md:leading-[1.4] font-black text-white mb-6"
             >
               ترحب غرفة مكة المكرمة بأصحاب السعادة <br />
               <span className="text-[#C5A059]">رئيس ونائب وأعضاء اللجنة الصناعية</span> <br />
