@@ -471,8 +471,8 @@ export default function App() {
       </section>
 
       {/* Strategic Context Section */}
-      <section id="context" className="py-24 bg-white">
-        <div className="max-w-[92%] 2xl:max-w-[1600px] mx-auto px-6">
+      <section id="context" className="min-h-screen py-24 bg-white flex items-center">
+        <div className="w-full max-w-[92%] 2xl:max-w-[1600px] mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
               variants={containerVariants}
@@ -537,10 +537,10 @@ export default function App() {
       </section>
 
       {/* Members Section (الهيكل التنظيمي) */}
-      <section id="members" className="py-24 bg-[#F8FAFC] relative overflow-hidden">
+      <section id="members" className="min-h-screen py-24 bg-[#F8FAFC] relative overflow-hidden flex items-center">
         <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-[#C5A059]/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
         
-        <div className="max-w-[92%] 2xl:max-w-[1600px] mx-auto px-6 relative z-10">
+        <div className="w-full max-w-[92%] 2xl:max-w-[1600px] mx-auto px-6 relative z-10">
           <motion.div 
             variants={containerVariants}
             initial="hidden"
@@ -572,9 +572,9 @@ export default function App() {
       </section>
 
       {/* Event Info Section */}
-      <section id="event" className="py-24 bg-[#002B49] text-white relative overflow-hidden">
+      <section id="event" className="min-h-screen py-24 bg-[#002B49] text-white relative overflow-hidden flex items-center">
         <div className="absolute top-0 right-0 w-64 h-64 bg-[#C5A059] opacity-10 rounded-full -translate-y-1/2 translate-x-1/2" />
-        <div className="max-w-[92%] 2xl:max-w-[1600px] mx-auto px-6 relative z-10">
+        <div className="w-full max-w-[92%] 2xl:max-w-[1600px] mx-auto px-6 relative z-10">
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -629,8 +629,8 @@ export default function App() {
       </section>
 
       {/* Reports Section (التقارير) */}
-      <section id="reports" className="py-24 bg-white relative overflow-hidden">
-        <div className="max-w-[92%] 2xl:max-w-[1600px] mx-auto px-6 relative z-10">
+      <section id="reports" className="min-h-screen py-24 bg-white relative overflow-hidden flex items-center">
+        <div className="w-full max-w-[92%] 2xl:max-w-[1600px] mx-auto px-6 relative z-10">
           <motion.div 
             variants={containerVariants}
             initial="hidden"
@@ -660,12 +660,12 @@ export default function App() {
       </section>
 
       {/* Methodology Section */}
-      <section id="methodology" className="py-24 bg-[#F8FAFC] relative overflow-hidden">
+      <section id="methodology" className="min-h-screen py-24 bg-[#F8FAFC] relative overflow-hidden flex items-center">
         {/* Background Decorative Elements */}
         <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-[#C5A059]/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
         <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-[#002B49]/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
 
-        <div className="max-w-[92%] 2xl:max-w-[1600px] mx-auto px-6 relative">
+        <div className="w-full max-w-[92%] 2xl:max-w-[1600px] mx-auto px-6 relative">
           <motion.div 
             variants={containerVariants}
             initial="hidden"
@@ -826,7 +826,7 @@ export default function App() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#002B49] py-24 text-white text-center relative overflow-hidden">
+      <footer className="bg-[#002B49] min-h-screen flex items-center justify-center py-24 text-white text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]" />
         </div>
