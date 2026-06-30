@@ -272,7 +272,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC] font-sans text-[#002B49] selection:bg-[#C5A059] selection:text-white" dir="rtl">
+    <div className="w-[1920px] mx-auto bg-gray-50 flex flex-col font-sans text-[#002B49] selection:bg-[#C5A059] selection:text-white shadow-2xl" dir="rtl">
       {/* Top Scroll Progress Bar */}
       <motion.div
         className="fixed top-0 left-0 right-0 h-1 bg-[#C5A059] z-[100] origin-left print:hidden shadow-[0_2px_10px_rgba(197,160,89,0.3)]"
@@ -335,7 +335,7 @@ export default function App() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 print:hidden ${scrolled ? 'bg-white shadow-lg py-2' : 'bg-transparent py-4'}`}
       >
-        <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
+        <div className="max-w-[1600px] mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center gap-3">
             <div className={`w-16 h-16 rounded-lg flex items-center justify-center overflow-hidden bg-white shadow-sm`}>
               <img 
@@ -403,7 +403,7 @@ export default function App() {
       </AnimatePresence>
 
       {/* Hero Section */}
-      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#002B49] py-20">
+      <section id="hero" className="relative w-[1920px] h-[1080px] shrink-0 flex items-center justify-center overflow-hidden bg-[#002B49]">
         <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
           <video
             autoPlay
@@ -418,7 +418,7 @@ export default function App() {
           <div className="absolute inset-0 bg-gradient-to-t from-[#002B49] via-transparent to-[#002B49]/90" />
         </div>
         
-        <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
+        <div className="relative z-10 max-w-[1400px] mx-auto px-6 text-center">
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -471,8 +471,8 @@ export default function App() {
       </section>
 
       {/* Strategic Context Section */}
-      <section id="context" className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
+      <section id="context" className="w-[1920px] h-[1080px] shrink-0 bg-white relative overflow-hidden flex flex-col justify-center">
+        <div className="max-w-[1600px] mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
               variants={containerVariants}
@@ -537,10 +537,10 @@ export default function App() {
       </section>
 
       {/* Members Section (الهيكل التنظيمي) */}
-      <section id="members" className="py-24 bg-[#F8FAFC] relative overflow-hidden">
+      <section id="members" className="w-[1920px] h-[1080px] shrink-0 bg-[#F8FAFC] relative overflow-hidden flex flex-col justify-center">
         <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-[#C5A059]/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
         
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="max-w-[1600px] mx-auto px-6 relative z-10">
           <motion.div 
             variants={containerVariants}
             initial="hidden"
@@ -572,7 +572,7 @@ export default function App() {
       </section>
 
       {/* Event Info Section */}
-      <section id="event" className="py-24 bg-[#002B49] text-white relative overflow-hidden">
+      <section id="event" className="w-[1920px] h-[1080px] shrink-0 bg-[#002B49] text-white relative overflow-hidden flex flex-col justify-center">
         <div className="absolute top-0 right-0 w-64 h-64 bg-[#C5A059] opacity-10 rounded-full -translate-y-1/2 translate-x-1/2" />
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <motion.div
@@ -629,7 +629,7 @@ export default function App() {
       </section>
 
       {/* Reports Section (التقارير) */}
-      <section id="reports" className="py-24 bg-white relative overflow-hidden">
+      <section id="reports" className="w-[1920px] h-[1080px] shrink-0 bg-white relative overflow-hidden flex flex-col justify-center">
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <motion.div 
             variants={containerVariants}
@@ -660,12 +660,12 @@ export default function App() {
       </section>
 
       {/* Methodology Section */}
-      <section id="methodology" className="py-24 bg-[#F8FAFC] relative overflow-hidden">
+      <section id="methodology" className="w-[1920px] h-[1080px] shrink-0 bg-[#F8FAFC] relative overflow-hidden flex flex-col justify-center">
         {/* Background Decorative Elements */}
         <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-[#C5A059]/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
         <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-[#002B49]/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
 
-        <div className="max-w-7xl mx-auto px-6 relative">
+        <div className="max-w-[1600px] mx-auto px-6 relative">
           <motion.div 
             variants={containerVariants}
             initial="hidden"
