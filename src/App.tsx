@@ -403,7 +403,7 @@ export default function App() {
       </AnimatePresence>
 
       {/* Hero Section */}
-      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#002B49] py-16">
+      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#002B49] py-24">
         <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
           <video
             autoPlay
@@ -471,7 +471,7 @@ export default function App() {
       </section>
 
       {/* Strategic Context Section */}
-      <section id="context" className="py-16 bg-white">
+      <section id="context" className="py-24 bg-white">
         <div className="max-w-[92%] 2xl:max-w-[1600px] mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -537,16 +537,16 @@ export default function App() {
       </section>
 
       {/* Members Section (الهيكل التنظيمي) */}
-      <section id="members" className="py-16 bg-[#F8FAFC] relative overflow-hidden">
+      <section id="members" className="py-24 bg-[#F8FAFC] relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-[#C5A059]/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
         
-        <div className="max-w-[92%] 2xl:max-w-[1600px] mx-auto px-6 relative z-10 h-[950px]">
+        <div className="max-w-[92%] 2xl:max-w-[1600px] mx-auto px-6 relative z-10">
           <motion.div 
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-center mb-[20px] h-[145px]"
+            className="text-center mb-16"
           >
             <motion.div variants={itemVariants} className="w-20 h-20 bg-[#002B49] rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg rotate-3 text-[#C5A059]">
               <Users size={40} />
@@ -560,7 +560,7 @@ export default function App() {
             initial="hidden" 
             whileInView="visible" 
             viewport={{ once: true }}
-            className="bg-white rounded-[2rem] shadow-xl border border-gray-100 w-full mx-auto h-[800px] px-[50px] pt-[20px] pb-[50px]"
+            className="bg-white p-6 md:p-10 lg:p-12 rounded-[2rem] shadow-xl border border-gray-100 w-full mx-auto"
           >
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-6 md:gap-8 items-stretch">
               {ALL_MEMBERS.map((member, i) => (
@@ -572,7 +572,7 @@ export default function App() {
       </section>
 
       {/* Event Info Section */}
-      <section id="event" className="py-16 bg-[#002B49] text-white relative overflow-hidden">
+      <section id="event" className="py-24 bg-[#002B49] text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-[#C5A059] opacity-10 rounded-full -translate-y-1/2 translate-x-1/2" />
         <div className="max-w-[92%] 2xl:max-w-[1600px] mx-auto px-6 relative z-10">
           <motion.div
@@ -629,7 +629,7 @@ export default function App() {
       </section>
 
       {/* Reports Section (التقارير) */}
-      <section id="reports" className="py-16 bg-white relative overflow-hidden">
+      <section id="reports" className="py-24 bg-white relative overflow-hidden">
         <div className="max-w-[92%] 2xl:max-w-[1600px] mx-auto px-6 relative z-10">
           <motion.div 
             variants={containerVariants}
@@ -660,7 +660,7 @@ export default function App() {
       </section>
 
       {/* Methodology Section */}
-      <section id="methodology" className="py-16 bg-[#F8FAFC] relative overflow-hidden">
+      <section id="methodology" className="py-24 bg-[#F8FAFC] relative overflow-hidden">
         {/* Background Decorative Elements */}
         <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-[#C5A059]/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
         <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-[#002B49]/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
@@ -826,7 +826,7 @@ export default function App() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#002B49] py-16 text-white text-center relative overflow-hidden">
+      <footer className="bg-[#002B49] py-24 text-white text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]" />
         </div>
