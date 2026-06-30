@@ -272,7 +272,7 @@ export default function App() {
   };
 
   return (
-    <div className="w-[1920px] mx-auto bg-gray-50 flex flex-col font-sans text-[#002B49] selection:bg-[#C5A059] selection:text-white shadow-2xl" dir="rtl">
+    <div className="min-h-screen bg-[#F8FAFC] font-sans text-[#002B49] selection:bg-[#C5A059] selection:text-white" dir="rtl">
       {/* Top Scroll Progress Bar */}
       <motion.div
         className="fixed top-0 left-0 right-0 h-1 bg-[#C5A059] z-[100] origin-left print:hidden shadow-[0_2px_10px_rgba(197,160,89,0.3)]"
@@ -335,7 +335,7 @@ export default function App() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 print:hidden ${scrolled ? 'bg-white shadow-lg py-2' : 'bg-transparent py-4'}`}
       >
-        <div className="max-w-[1600px] mx-auto px-6 flex justify-between items-center">
+        <div className="max-w-[92%] 2xl:max-w-[1600px] mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center gap-3">
             <div className={`w-16 h-16 rounded-lg flex items-center justify-center overflow-hidden bg-white shadow-sm`}>
               <img 
@@ -403,7 +403,7 @@ export default function App() {
       </AnimatePresence>
 
       {/* Hero Section */}
-      <section id="hero" className="relative w-[1920px] h-[1080px] shrink-0 flex items-center justify-center overflow-hidden bg-[#002B49]">
+      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#002B49] py-16">
         <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
           <video
             autoPlay
@@ -418,7 +418,7 @@ export default function App() {
           <div className="absolute inset-0 bg-gradient-to-t from-[#002B49] via-transparent to-[#002B49]/90" />
         </div>
         
-        <div className="relative z-10 max-w-[1400px] mx-auto px-6 text-center">
+        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -432,11 +432,11 @@ export default function App() {
             </motion.span>
             <motion.h1 
               variants={itemVariants}
-              className="text-[50px] leading-[90px] font-black text-white mb-6"
+              className="text-4xl md:text-5xl leading-tight md:leading-[1.4] font-black text-white mb-6"
             >
               ترحب غرفة مكة المكرمة بأصحاب السعادة <br />
               <span className="text-[#C5A059]">رئيس ونائب وأعضاء اللجنة الصناعية</span> <br />
-              <span className="text-2xl md:text-3xl block mt-2 text-white/90">في اجتماعهم الدوري الرابع (4)</span>
+              <span className="text-xl md:text-2xl block mt-4 text-white/90">في اجتماعهم الدوري الرابع (4)</span>
             </motion.h1>
             <motion.p 
               variants={itemVariants}
@@ -471,8 +471,8 @@ export default function App() {
       </section>
 
       {/* Strategic Context Section */}
-      <section id="context" className="w-[1920px] h-[1080px] shrink-0 bg-white relative overflow-hidden flex flex-col justify-center">
-        <div className="max-w-[1600px] mx-auto px-6">
+      <section id="context" className="py-16 bg-white">
+        <div className="max-w-[92%] 2xl:max-w-[1600px] mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
               variants={containerVariants}
@@ -484,7 +484,7 @@ export default function App() {
                 <div className="w-12 h-1 bg-[#C5A059]" />
                 <span className="text-[#C5A059] font-bold uppercase tracking-wider">تشكيل اللجنة واستراتيجيات عملها</span>
               </motion.div>
-              <motion.h2 variants={itemVariants} className="text-[25px] font-bold mb-8 leading-tight text-[#002B49]">
+              <motion.h2 variants={itemVariants} className="text-2xl md:text-3xl font-bold mb-8 leading-tight text-[#002B49]">
                 صدر بيان اللجنة التنفيذية بغرفة مكة المكرمة<span className="text-[#C5A059]"> بأسماء أعضاء اللجنة الصناعية</span> للفترة الثانية - للدورة الـ 21
               </motion.h2>
               <motion.p variants={itemVariants} className="text-lg text-gray-600 mb-8 leading-relaxed">
@@ -537,21 +537,21 @@ export default function App() {
       </section>
 
       {/* Members Section (الهيكل التنظيمي) */}
-      <section id="members" className="w-[1920px] h-[1080px] shrink-0 bg-[#F8FAFC] relative overflow-hidden flex flex-col justify-center">
+      <section id="members" className="py-16 bg-[#F8FAFC] relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-[#C5A059]/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
         
-        <div className="max-w-[1600px] mx-auto px-6 relative z-10">
+        <div className="max-w-[92%] 2xl:max-w-[1600px] mx-auto px-6 relative z-10 h-[950px]">
           <motion.div 
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-[20px] h-[145px]"
           >
             <motion.div variants={itemVariants} className="w-20 h-20 bg-[#002B49] rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg rotate-3 text-[#C5A059]">
               <Users size={40} />
             </motion.div>
-            <motion.h2 variants={itemVariants} className="text-4xl font-bold mb-4 text-[#002B49]">الهيكل التنظيمي</motion.h2>
+            <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold mb-4 text-[#002B49]">الهيكل التنظيمي</motion.h2>
             <motion.p variants={itemVariants} className="text-gray-500 max-w-2xl mx-auto">نخبة من الكفاءات الوطنية تقود التحول الصناعي في العاصمة المقدسة</motion.p>
           </motion.div>
 
@@ -560,9 +560,9 @@ export default function App() {
             initial="hidden" 
             whileInView="visible" 
             viewport={{ once: true }}
-            className="bg-white p-6 md:p-10 lg:p-12 rounded-[2rem] shadow-xl border border-gray-100 max-w-6xl mx-auto"
+            className="bg-white rounded-[2rem] shadow-xl border border-gray-100 w-full mx-auto h-[800px] px-[50px] pt-[20px] pb-[50px]"
           >
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 md:gap-8 items-stretch">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-6 md:gap-8 items-stretch">
               {ALL_MEMBERS.map((member, i) => (
                 <MemberCard key={i} member={member} />
               ))}
@@ -572,9 +572,9 @@ export default function App() {
       </section>
 
       {/* Event Info Section */}
-      <section id="event" className="w-[1920px] h-[1080px] shrink-0 bg-[#002B49] text-white relative overflow-hidden flex flex-col justify-center">
+      <section id="event" className="py-16 bg-[#002B49] text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-[#C5A059] opacity-10 rounded-full -translate-y-1/2 translate-x-1/2" />
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="max-w-[92%] 2xl:max-w-[1600px] mx-auto px-6 relative z-10">
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -585,7 +585,7 @@ export default function App() {
               <motion.div variants={itemVariants} className="w-20 h-20 bg-[#C5A059] rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-lg rotate-3">
                 <Building2 size={40} className="text-[#002B49]" />
               </motion.div>
-              <motion.h2 variants={itemVariants} className="text-4xl font-bold mb-4">الاجتماعات والفعاليات</motion.h2>
+              <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold mb-4">الاجتماعات والفعاليات</motion.h2>
               <motion.p variants={itemVariants} className="text-white/60 max-w-2xl mx-auto">توثيق البيانات المؤسسية لضمان مرجعية التقرير ومتابعة الأثر الاستراتيجي</motion.p>
             </div>
 
@@ -629,8 +629,8 @@ export default function App() {
       </section>
 
       {/* Reports Section (التقارير) */}
-      <section id="reports" className="w-[1920px] h-[1080px] shrink-0 bg-white relative overflow-hidden flex flex-col justify-center">
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <section id="reports" className="py-16 bg-white relative overflow-hidden">
+        <div className="max-w-[92%] 2xl:max-w-[1600px] mx-auto px-6 relative z-10">
           <motion.div 
             variants={containerVariants}
             initial="hidden"
@@ -641,7 +641,7 @@ export default function App() {
             <motion.div variants={itemVariants} className="w-20 h-20 bg-[#002B49]/5 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-sm rotate-3 text-[#C5A059]">
               <FileText size={40} />
             </motion.div>
-            <motion.h2 variants={itemVariants} className="text-4xl font-bold mb-4 text-[#002B49]">التقارير والمخرجات</motion.h2>
+            <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold mb-4 text-[#002B49]">التقارير والمخرجات</motion.h2>
             <motion.p variants={itemVariants} className="text-gray-500 max-w-2xl mx-auto">توثيق شامل لمخرجات أعمال اللجنة والدراسات والمبادرات</motion.p>
           </motion.div>
 
@@ -660,12 +660,12 @@ export default function App() {
       </section>
 
       {/* Methodology Section */}
-      <section id="methodology" className="w-[1920px] h-[1080px] shrink-0 bg-[#F8FAFC] relative overflow-hidden flex flex-col justify-center">
+      <section id="methodology" className="py-16 bg-[#F8FAFC] relative overflow-hidden">
         {/* Background Decorative Elements */}
         <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-[#C5A059]/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
         <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-[#002B49]/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
 
-        <div className="max-w-[1600px] mx-auto px-6 relative">
+        <div className="max-w-[92%] 2xl:max-w-[1600px] mx-auto px-6 relative">
           <motion.div 
             variants={containerVariants}
             initial="hidden"
@@ -677,7 +677,7 @@ export default function App() {
               <div className="w-2 h-2 bg-[#C5A059] rounded-full animate-pulse" />
               <span className="text-[#C5A059] font-bold text-sm uppercase tracking-widest">منهجية التميز الصناعي</span>
             </motion.div>
-            <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl font-bold text-[#002B49] mb-6">
+            <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-[#002B49] mb-6">
               إدارة المشاريع الصناعية الاحترافية
             </motion.h2>
             <motion.p variants={itemVariants} className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -774,7 +774,7 @@ export default function App() {
             >
               <div className="relative">
                 <div className="absolute -inset-4 bg-[#C5A059]/10 rounded-[3rem] blur-2xl" />
-                <div className="relative aspect-[9/16] max-w-[320px] mx-auto rounded-[3rem] overflow-hidden shadow-2xl border-[12px] border-white bg-gray-50 group">
+                <div className="relative aspect-[9/16] max-w-[260px] mx-auto rounded-[2.5rem] overflow-hidden shadow-2xl border-[10px] border-white bg-gray-50 group">
                   <img
                     src={getDirectImageUrl('https://drive.google.com/file/d/1b7wF-yXlGRORE-iYZbcnHdlF8lBUY5N2/view?usp=sharing')}
                     alt="صورة المبادرة"
@@ -798,7 +798,7 @@ export default function App() {
               <div className="inline-block px-4 py-1 bg-[#002B49] text-white text-xs font-bold rounded-full mb-2">
                 الاستراتيجية
               </div>
-              <h3 className="text-3xl md:text-4xl font-bold text-[#002B49] leading-tight">
+              <h3 className="text-2xl md:text-3xl font-bold text-[#002B49] leading-tight">
                 اللجنة الصناعية: <br />
                 <span className="text-[#C5A059]">نموذج مكة للصناعة المستدامة</span>
               </h3>
@@ -826,7 +826,7 @@ export default function App() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#002B49] py-24 text-white text-center relative overflow-hidden">
+      <footer className="bg-[#002B49] py-16 text-white text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]" />
         </div>
@@ -846,7 +846,7 @@ export default function App() {
                 onError={handleLogoError}
               />
             </motion.div>
-            <motion.h2 variants={itemVariants} className="text-6xl font-black mb-8 text-[#C5A059]">شكراً لكم</motion.h2>
+            <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl font-black mb-8 text-[#C5A059]">شكراً لكم</motion.h2>
             <motion.div variants={itemVariants} className="text-xl text-white/60 mb-12 space-y-2">
               <p>اللجنة الصناعية - غرفة مكة المكرمة</p>
               <p>إعداد أخصائي اللجنة/ خلف شعبان</p>
